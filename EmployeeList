@@ -1,0 +1,23 @@
+package hospital;
+
+
+
+//Matthew Treece; Period 3; Table 5
+abstract public class EmployeeList
+{
+    private String name;
+    private String roomNumber;
+    public EmployeeList (String name, String roomNumber)
+    {
+        this.name = name;
+        this.roomNumber = roomNumber;
+    }
+    public String toString()
+    {
+        String result = "Name: " + name + "\n";
+
+        result += "Room Number: " + roomNumber;
+        
+        return result;
+    }
+}
