@@ -1,0 +1,23 @@
+package hospital;
+
+
+//Matthew Treece; Period 3; Table 5
+public class Administrator extends EmployeeList
+{
+    private String admin;
+    public Administrator(String name, String roomNumber, String admin)
+    {
+        super(name, roomNumber);
+        this.admin = admin;
+    }
+    public String toString()
+    {
+        String result = super.toString();
+        
+        result += "\nProfession: Administrator";
+        
+        result += "\nWorking on: " + admin; 
+        
+        return result;
+    }
+}
