@@ -1,0 +1,23 @@
+package hospital;
+
+
+//Matthew Treece; Period 3; Table 5
+public class Receptionist extends EmployeeList
+{
+    private String greet;
+    public Receptionist(String name, String roomNumber, String greet)
+    {
+        super(name, roomNumber);
+        this.greet = greet;
+    }
+    public String toString()
+    {
+        String result = super.toString();
+        
+        result += "\nProfession: Receptionist";
+        
+        result += "\nSaying: " + greet; 
+        
+        return result;
+    }
+}
