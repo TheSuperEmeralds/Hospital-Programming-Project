@@ -1,0 +1,18 @@
+package hospital;
+
+
+//Matthew Treece; Period 3; Table 5
+public class Hospital
+{
+    /**
+     * Creates a staff of employees for a firm and pays them
+     */
+    public static void main (String[] args)
+    {
+        Employee employee = new Employee();
+        System.out.println("Work Manager: Matthew Treece");
+        System.out.println("===============================");
+        employee.work();
+    }
+}
+
