@@ -1,0 +1,23 @@
+package hospital;
+
+
+//Matthew Treece; Period 3; Table 5
+public class Nurse extends EmployeeList
+{
+    private String heal;
+    public Nurse(String name, String roomNumber, String heal)
+    {
+        super(name, roomNumber);
+        this.heal = heal;
+    }
+    public String toString()
+    {
+        String result = super.toString();
+        
+        result += "\nProfession: Nurse";
+        
+        result += "\nHealing: " + heal; 
+        
+        return result;
+    }
+}
