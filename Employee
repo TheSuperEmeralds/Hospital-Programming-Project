@@ -1,0 +1,38 @@
+package hospital;
+import java.text.NumberFormat;
+
+
+//Matthew Treece; Period 3; Table 5
+public class Employee
+{
+    private EmployeeList[] employeeList;
+    public Employee()
+    {
+        employeeList = new EmployeeList[10];
+
+        employeeList[0] = new Administrator("God-Emperor Trump", "Classified", "Constructing a firewall");
+
+        employeeList[1] = new Doctor("Dr. LeShea", "167", "Mrs. Rush");
+        employeeList[2] = new Doctor("Doctor Who?", "Lost in time and space", "The TARDIS"); //Doctor Who reference
+
+        employeeList[3] = new Nurse("Nurse Joy", "020", "My Pokemon"); //Pokemon Reference
+        
+        employeeList[4] = new Surgeon("Dr. Carson", "123", "God-Emperor Trump");
+
+        employeeList[5] = new Receptionist("John Cena", "001", "AND HIS NAME IS JOHN CENA!");
+        employeeList[6] = new Receptionist("Patrick Star", "002", "No, this is Patrick!"); //Spongebob reference
+        
+        employeeList[7] = new Janitor("Steven Kemp", "088", "His Github repositories");
+        employeeList[8] = new Janitor("William Dyess", "667", "Diamonds"); //Per his request
+        employeeList[9] = new Janitor("Master Chief", " 117", "343 Industries"); //Halo reference
+    }
+    public void work()
+    {
+        for (int count = 0; count < employeeList.length; count++)
+        {
+            System.out.println(employeeList[count].toString());
+
+            System.out.println("-------------------------------");
+        }
+    }
+}
