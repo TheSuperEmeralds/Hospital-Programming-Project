@@ -1,0 +1,23 @@
+package hospital;
+
+
+//Matthew Treece; Period 3; Table 5
+public class Doctor extends EmployeeList
+{
+    private String checkup;
+    public Doctor (String Name, String roomNumber, String checkup)
+    {
+        super(Name, roomNumber);
+        this.checkup = checkup;
+    }
+    public String toString()
+    {
+        String result = super.toString();
+        
+        result += "\nProfession: Doctor";
+        
+        result += "\nPreforming a checkup on: " + checkup; 
+        
+        return result;
+    }
+}
