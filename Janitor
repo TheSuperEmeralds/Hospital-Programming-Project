@@ -1,0 +1,23 @@
+package hospital;
+
+
+//Matthew Treece; Period 3; Table 5
+public class Janitor extends EmployeeList
+{
+    private String clean;
+    public Janitor(String name, String roomNumber, String clean)
+    {
+        super(name, roomNumber);
+        this.clean = clean;
+    }
+    public String toString()
+    {
+        String result = super.toString();
+        
+        result += "\nProfession: Janitor";
+        
+        result += "\nCleaning: " + clean; 
+        
+        return result;
+    }
+}
